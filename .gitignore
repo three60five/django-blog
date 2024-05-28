@@ -160,3 +160,5 @@ cython_debug/
 #.idea/
 
 lesson6assignment/
+django_blog_dave_allen.zip
+.DS_Store
