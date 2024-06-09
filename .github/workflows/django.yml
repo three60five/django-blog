@@ -27,6 +27,7 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
+        black --check blogging mysite polling
         python manage.py test
     - name: Code style check
       run: |
