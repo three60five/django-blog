@@ -50,7 +50,7 @@ class PostViewSet(viewsets.ModelViewSet):
     API endpoint that allows groups to be viewed or edited.
     """
 
-    queryset = Post.objects.all().order_by("published_date")
+    queryset = Post.objects.all().order_by("-published_date")
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
